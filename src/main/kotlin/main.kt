@@ -7,7 +7,7 @@ fun main() {
         val guess = readLine()
         if (guess == null || guess.length != 4) {
             println("please enter a 4 digit number")
-            continue;
+            continue
         }
         if (guess.equals(numberString)) {
             println("You won!")
@@ -35,6 +35,7 @@ fun main() {
     }
 }
 
+// function for generating numbers to guess
 fun generateNumberString(): String {
     var number = ""
     outerLoop@ while (number.length < 4)
